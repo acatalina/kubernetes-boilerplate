@@ -1,0 +1,21 @@
+# apiVersion: extensions/v1beta1
+# kind: Ingress
+# metadata:
+#   name: # App name
+#   namespace: # Namespace
+#   annotations:
+#     kubernetes.io/tls-acme: "true"
+#     kubernetes.io/ingress.class: "nginx"
+# spec:
+#   tls:
+#   - hosts:
+#     - host.com
+#     secretName: # App tls secret: appName-tls
+#   rules:
+#   - host: host.com
+#     http:
+#       paths:
+#       - path: /
+#         backend:
+#           serviceName: # App name
+#           servicePort: # App port
